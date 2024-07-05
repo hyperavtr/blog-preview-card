@@ -59,8 +59,8 @@ main {
 	box-shadow: 0.5rem 0.6rem;
 	border: 1px solid var(--black-color);
 	border-radius: 16px;
-	width: 22rem;
-	height: 29.4rem;
+	width: 21rem;
+	height: 28.7rem;
 	padding: 1.4rem 1.5rem 1.5rem 1.5rem;
 	transition: 0.2s ease-in-out;
 }
@@ -130,6 +130,6 @@ main {
 @media only screen and (max-width:386px) {
 	#blog-preview-card {
 		width: 78dvw;
-		height: 28em;
+		height: 27.6em;
 	}
 }
