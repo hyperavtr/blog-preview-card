@@ -31,6 +31,10 @@
 	--black-color: hsl(0, 0%, 7%);
 }
 
+* {
+	box-sizing: border-box;
+}
+
 html {
 	font-family: Figtree;
 	font-size: 1rem;
@@ -38,98 +42,102 @@ html {
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: var(--yellow-color);
-}
-
-main {
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	background-color: var(--yellow-color);
+	min-height: 100vh;
 	height: 100dvh;
 	width: 100dvw;
 }
 
 /*container*/
-#blog-preview-card {
+.blog-preview-card {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	background-color: var(--white-color);
 	box-shadow: 0.5rem 0.6rem;
 	border: 1px solid var(--black-color);
 	border-radius: 16px;
-	width: 21rem;
-	height: 28.7rem;
-	padding: 1.4rem 1.5rem 1.5rem 1.5rem;
+	width: 23rem;
+	padding: 1.4rem;
 	transition: 0.2s ease-in-out;
 }
 
-#blog-preview-card:hover {
+.blog-preview-card:hover {
 	box-shadow: 1rem 1.1rem;
 	transition: 0.2s ease-in-out;
 }
 
 /*article illustration*/
-#illustration-article {
+.illustration-article {
 	border-radius: 13px;
 }
 
 /*about article*/
-#article-type-styling {
+.blog-preview-about {
+	margin-top: 0.5rem;
+}
+
+.article-type-styling {
 	font-weight: bold;
 	background-color: var(--yellow-color);
 	padding: 0.3rem 0.7rem 0.3rem 0.7rem;
 	border-radius: 5px;
 }
 
-#publish-date {
+.publish-date {
 	font-weight: 500;
 	font-style: italic;
 }
 
 /*header and description*/
-#link-to-the-article {
+.link-to-the-article {
 	text-decoration: none;
 }
 
-#header {
+.header {
 	font-weight: bold;
 	color: var(--black-color);
-	font-size: 1.6rem;
+	font-size: 1.5rem;
+	margin: 0;
 }
 
-#header:hover {
+.header:hover {
 	color: var(--yellow-color);
 	transition: 0.2s ease-in-out;
 }
 
-#description {
+.description {
 	color: var(--grey-color);
 	line-height: 1.4rem;
+	margin-bottom: 1.3rem;
 }
 
 /*footer*/
-#blog-preview-author {
+.blog-preview-author {
 	display: flex;
+	align-items: center;
 	flex-direction: row;
+	gap: 0.8rem;
 }
 
-#author-img {
+.author-img {
 	width: 2.1rem;
 	height: 2.1rem;
-	margin-top: 0.5rem;
 }
 
-#author-name {
+.author-name {
 	font-weight: bold;
-	margin-left: 0.5rem;
+	margin: 0;
 }
 
 /*media*/
-@media only screen and (max-width:386px) {
-	#blog-preview-card {
-		width: 78dvw;
-		height: 27.6em;
+@media only screen and (max-width:406px) {
+	.blog-preview-card {
+		width: 90dvw;
 	}
+
 }
